@@ -1,0 +1,147 @@
+@font-face {
+  font-family: mrsolofont;
+  src: url(/fonts/JosefinSans-VariableFont_wght.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "bootstrap-icons";
+  src: url("/fonts/bootstrap-icons.woff2?524846017b983fc8ded9325d94ed40f3") format("woff2"),
+    url("/fonts/bootstrap-icons.woff?524846017b983fc8ded9325d94ed40f3") format("woff");
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: mrsolofont;
+}
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  height: 20%;
+  background-color: #0881DE;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .7);
+}
+
+.title-nav {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.active {
+  position: relative;
+  transition: all 300ms ease-in-out;
+}
+
+.hide {
+  display: none;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  left: -20%;
+  width: 140%;
+  height: 30%;
+  border-radius: 200px;
+  background: #FF0B5C;
+}
+
+
+.title-nav h1,
+.title-nav i {
+  color: #fff;
+}
+
+.title-nav i{
+  font-size: 1.4rem;
+}
+
+.tab-nav {
+  width: 100%;
+  height: 50%;
+}
+
+.tab-nav ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  padding-bottom: 1rem;
+}
+
+.tab-nav ul li {
+  list-style: none;
+}
+
+.tab-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.tab-nav ul li a i {
+  font-size: 1.4rem;
+}
+
+iframe {
+  width: 100%;
+  height: 79%;
+}
+
+.add-contact {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #4BF9F7;
+  z-index: 99;
+  opacity: 1;
+}
+
+.add-contact::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f24e";
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 11%;
+  right: 11%;
+  font-size: 1.4rem;
+  background-color: #0090ff;
+  z-index: 98;
+  opacity: 1;
+}
